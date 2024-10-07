@@ -3,7 +3,7 @@
 	url = https://github.com/pybind/pybind11.git
 [submodule "dune"]
 	path = dune
-	url = https://github.com/LSTS/dune.git
+	url = git@gitlab.com:omst/dune.git
 [submodule "imc"]
 	path = imc
-	url = https://github.com/LSTS/imc.git
+	url = https://github.com/oceanscan/imc.git
