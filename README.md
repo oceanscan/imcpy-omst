@@ -11,7 +11,15 @@ git clone --recursive git@github.com:oceanscan/imcpy-omst.git
 ```
 This includes the pybind11 submodule.
 
-#### Build the library
+#### If using OMST IMC repo with DUNE from LSTS, remove the following lines from dune/cmake/IMC.cmake (this is required because the IMC from OMST does not include a IMC_Addresses.xml file)
+```cmake
+      COMMAND ${DUNE_PROGRAM_PYTHON}
+      ${PROJECT_SOURCE_DIR}/programs/generators/imc_addresses.py
+      ${extra_flags}
+      -x ${DUNE_IMC_ADDRESSES_XML} ${PROJECT_SOURCE_DIR}/etc/common/imc-addresses.ini
+```
+
+#### Build and install the library
 
 ```bash
 python3 setup.py install
