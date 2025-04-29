@@ -3,21 +3,11 @@ Python bindings for [Inter-Module Communication Protocol (IMC)](https://lsts.fe.
 
 ## Installation
 
-### Pip install (PyPi)
-Precompiled wheels are available from PyPi, compiled against the standard IMC message set (LSTS).
-If your project does not use custom IMC messages, these wheels should be sufficient.
-
-```bash
-pip install imcpy
-```
-
-Check the release notes or pypi for the precompiled architectures and python versions.
-
 ### Source install
 
 #### Clone the project recursively
 ```bash
-git clone --recursive https://github.com/oysstu/imcpy.git
+git clone --recursive git@github.com:oceanscan/imcpy-omst.git
 ```
 This includes the pybind11 submodule.
 
