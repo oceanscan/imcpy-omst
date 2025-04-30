@@ -1,6 +1,12 @@
 # imcpy
 Python bindings for [Inter-Module Communication Protocol (IMC)](https://lsts.fe.up.pt/toolchain/imc) used to communicate between modules in the [LSTS toolchain](https://lsts.fe.up.pt/).
 
+## Requirements for building
+
+- Linux-based host operating system is required.
+- git
+- python3
+
 ## Installation
 
 ### Source install
@@ -22,7 +28,7 @@ This includes the pybind11 submodule.
 #### Build and install the library
 
 ```bash
-python3 setup.py install
+pip3 install .
 ```
 
 If you use the system python and only want to install for a single user, you can add --user to the install command without needing administrator rights. On Windows, the Windows SDK must be installed with Visual Studio and the CMake executable must be on the system PATH.
